@@ -51,14 +51,5 @@ extension LoginViewController: FUIAuthDelegate{
                 print("New User!")
             }
         })
-           
-            /*
-            if let userDict = snapshot.value as? [String : Any]{
-                print("User already exists \(userDict.debugDescription).")
-            } else {
-                print("New user!")
-            }
-        })
- */
     }
 }
