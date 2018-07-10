@@ -14,6 +14,9 @@
 		F352FB5320F423E6009E3F76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F352FB5220F423E6009E3F76 /* Assets.xcassets */; };
 		F352FB5620F423E6009E3F76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F352FB5420F423E6009E3F76 /* LaunchScreen.storyboard */; };
 		F352FB5E20F4277F009E3F76 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F352FB5D20F4277F009E3F76 /* GoogleService-Info.plist */; };
+		F353ECE020F51B2000F345D3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F352FB5720F423E6009E3F76 /* Info.plist */; };
+		F353ECE220F5476800F345D3 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F353ECE120F5476800F345D3 /* Login.storyboard */; };
+		F353ECE420F5491D00F345D3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F353ECE320F5491D00F345D3 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,8 @@
 		F352FB5520F423E6009E3F76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F352FB5720F423E6009E3F76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F352FB5D20F4277F009E3F76 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F353ECE120F5476800F345D3 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		F353ECE320F5491D00F345D3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +86,81 @@
 			isa = PBXGroup;
 			children = (
 				F352FB4B20F423E3009E3F76 /* AppDelegate.swift */,
-				F352FB4D20F423E3009E3F76 /* ViewController.swift */,
-				F352FB4F20F423E3009E3F76 /* Main.storyboard */,
+				F353ECDA20F5191100F345D3 /* Services */,
+				F353ECD920F5190B00F345D3 /* Models */,
+				F353ECD520F5189C00F345D3 /* Controller */,
+				F353ECDE20F5192F00F345D3 /* Views */,
+				F353ECD820F5190500F345D3 /* Helpers */,
+				F353ECDB20F5191700F345D3 /* Storyboards */,
 				F352FB5220F423E6009E3F76 /* Assets.xcassets */,
-				F352FB5420F423E6009E3F76 /* LaunchScreen.storyboard */,
-				F352FB5720F423E6009E3F76 /* Info.plist */,
-				F352FB5D20F4277F009E3F76 /* GoogleService-Info.plist */,
+				F353ECD720F518F000F345D3 /* Extensions */,
+				F353ECDF20F5199000F345D3 /* Supporting Files */,
 			);
 			path = Makestagram;
+			sourceTree = "<group>";
+		};
+		F353ECD520F5189C00F345D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F352FB4D20F423E3009E3F76 /* ViewController.swift */,
+				F353ECE320F5491D00F345D3 /* LoginViewController.swift */,
+			);
+			name = Controller;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		F353ECD720F518F000F345D3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F353ECD820F5190500F345D3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F353ECD920F5190B00F345D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F353ECDA20F5191100F345D3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F353ECDB20F5191700F345D3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F352FB4F20F423E3009E3F76 /* Main.storyboard */,
+				F352FB5420F423E6009E3F76 /* LaunchScreen.storyboard */,
+				F353ECE120F5476800F345D3 /* Login.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F353ECDE20F5192F00F345D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F353ECDF20F5199000F345D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F352FB5D20F4277F009E3F76 /* GoogleService-Info.plist */,
+				F352FB5720F423E6009E3F76 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +224,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F353ECE020F51B2000F345D3 /* Info.plist in Resources */,
 				F352FB5620F423E6009E3F76 /* LaunchScreen.storyboard in Resources */,
+				F353ECE220F5476800F345D3 /* Login.storyboard in Resources */,
 				F352FB5E20F4277F009E3F76 /* GoogleService-Info.plist in Resources */,
 				F352FB5320F423E6009E3F76 /* Assets.xcassets in Resources */,
 				F352FB5120F423E3009E3F76 /* Main.storyboard in Resources */,
@@ -229,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F353ECE420F5491D00F345D3 /* LoginViewController.swift in Sources */,
 				F352FB4E20F423E3009E3F76 /* ViewController.swift in Sources */,
 				F352FB4C20F423E3009E3F76 /* AppDelegate.swift in Sources */,
 			);
@@ -376,7 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Makestagram/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Makestagram/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,7 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Makestagram/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Makestagram/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
